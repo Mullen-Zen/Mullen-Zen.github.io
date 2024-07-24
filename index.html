@@ -2,8 +2,46 @@
 <html>
     <head>
         <title>Garrison's Website</title>
+        <style>
+            body {
+                background-color: black;
+                background-image: url(background.gif);
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            h1 {
+                color: gainsboro;
+            }
+            .topNavbar {
+                background-color: #000;
+                overflow: hidden;
+            }
+            .topNavbar a {
+                float: left;
+                color: rgb(173, 173, 173);
+                text-align: center;
+                padding: 10px 12px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .topNavbar a:hover {
+                background-color: #fff;
+                transition: 750ms;
+            }
+            .topNavbar a.active {
+                background-color: darkred;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello there!</h1>
+        <div class="topNavbar">
+            <a href="" class="active">Chat</a>
+            <a href="about.html">About</a>
+        </div>
     </body>
+    <script>
+        document.getElementById('test').hidden = false;
+    </script>
 </html>

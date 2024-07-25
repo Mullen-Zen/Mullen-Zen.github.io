@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    background-image: url(background.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1, p {
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.topNavbar {
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+}
+.topNavbar a {
+    float: left;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    padding: 18px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.topNavbar a:hover {
+    background-color: #fff;
+    transition: 750ms;
+}
+.topNavbar a.active {
+    background-color: darkred;
+}
+.topNavbar p {
+    padding: 0px 12px; 
+}
+.characterDisplay {
+    position: fixed;
+    margin-top: -475px;
+    margin-left: 400px;
+    z-index: 50;
+}
+#character {
+    height: 1000px;
+}
+.chatbox {
+    z-index: 100;
+    opacity: 65%;
+    background-color: #000;
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 65%;
+    margin-top: 500px;
+    position: relative;
+}
+.chat, #continue {
+    font-family: 'Courier New', Courier, monospace;
+    color: tan;
+    font-size: 20pt;
+    font-weight: bold;
+    margin: 15px;
+    opacity: 100% !important;
+}
+#continue {
+    background: black;
+    position: absolute;
+    right: 0;
+}
+.button {
+    position: relative;
+    width: 65%;
+    margin: auto;
+    z-index: 100;
+}
+.textEntry {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+input, button {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+input {
+    width: 95%;
+    height: 100%;
+}
+#textSubmit {
+    width: 4%;
+    height: 100%;
+}
